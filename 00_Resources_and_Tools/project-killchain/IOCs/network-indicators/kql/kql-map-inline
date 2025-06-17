@@ -1,0 +1,41 @@
+// Project Killchain - KQL to ingest our CTI, mapped to DFE [EXAMPLE]
+// Not recommended at scale, this can be a useful method for small security/soc teams
+// Mapped to DFE - use this format to map to other log sources to detect malware infection
+let PKC_IOCS = (externaldata(ext_iocs: string) [@"https://raw.githubusercontent.com/CyDefOps/project-killchain/main/IOCs/network-indicators/malware_list"]
+    with (format="txt"))
+    | where ext_iocs !startswith "#"
+    | extend 
+        pkc_type = split(ext_iocs, ",", 0), 
+        pkc_value = split(ext_iocs, ",", 1)
+    | extend
+        pkc_urls = iff(pkc_type contains "url", tostring(parse_json(pkc_value)[0]), ""),
+        pkc_domains = iff(pkc_type contains "domain", tostring(parse_json(pkc_value)[0]), ""),
+        pkc_ips = iff(pkc_type contains "ip", tostring(parse_json(pkc_value)[0]), "");
+let URL_IOCs =
+    PKC_IOCS
+    | where isnotempty(pkc_urls)
+    | project pkc_urls;
+let IP_IOCs =
+    PKC_IOCS
+    | where isnotempty(pkc_ips)
+    | project pkc_ips;
+let Domain_IOCs =
+    PKC_IOCS
+    | where isnotempty(pkc_domains)
+    | project pkc_domains;
+union 
+    (
+    DeviceNetworkEvents
+    | where RemoteUrl has_any (Domain_IOCs)
+    | extend match_type = "Domain Match"
+    ),
+    (
+    DeviceNetworkEvents
+    | join kind=inner (URL_IOCs) on $left.RemoteUrl == $right.pkc_urls
+    | extend match_type = "URL Match"
+    ),
+    (
+    DeviceNetworkEvents
+    | join kind=inner (IP_IOCs) on $left.RemoteIP == $right.pkc_ips
+    | extend match_type = "IP Match"
+    )
