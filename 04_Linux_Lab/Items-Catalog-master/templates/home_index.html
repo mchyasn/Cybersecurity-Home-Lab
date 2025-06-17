@@ -1,0 +1,43 @@
+{% extends "root_layout.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container sections">
+    <div class="row">
+      <div class="col-md-12">
+          <h1>Welcome to Your Item Catalog App CAT_A_LOG! ^_^</h1>
+          <p>This is HomePage where you see all items/categories, you can login to add/delete/edit to you liking, EnJoY! "))
+          </p>
+      </div>
+    </div>
+    {% if 'username' in session %}
+    <div class="row">
+      <div class="col-md-12">
+        <a href="{{ url_for('add_category') }}"><button class="btn btn-primary"><i class="fas fa-plus text-and-icon"></i>Add Category</button></a>
+        <a href="{{ url_for('add_item') }}"><button class="btn btn-success" style="margin-left: 10px;"><i class="fas fa-plus text-and-icon"></i>Add Item</button></a>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="container sections">  
+            <div class="row">
+              <div class="col-md-3" style="background-color:white; padding-top: 8px;">
+                <h2>Category</h2><hr>
+                {% for category in categories %}
+                  <a href="{{ url_for('show_items_in_category', category_id=category.id) }}"><p>{{ category.name }}</p></a>
+                {% endfor %}
+              </div>
+              
+              <div class="offset-md-1"></div>
+
+              <div class="col-md-8" style="background-color:white; padding-top: 8px;">
+                <h2>Latest Items</h2><hr>
+                {% for item in items %}
+                  <a href="{{ url_for('view_item', item_id=item.id) }}"><p>{{ item.name }}</p></a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+</div>
+{% endblock %}

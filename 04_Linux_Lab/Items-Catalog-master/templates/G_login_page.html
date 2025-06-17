@@ -1,0 +1,81 @@
+{% extends "root_layout.html" %}
+{% block title %}Login{% endblock %}
+{% block head %}
+<script src="https://apis.google.com/js/client:platform.js?onload=start" async defer> </script>
+{% endblock %}
+
+{% block content %}
+
+<!-- GOOGLE SIGN IN-->
+<div class="container" style="text-align: center;">
+
+     <button style="text-transform:none" id="signInButton">
+         <div class="left">
+             <img width="20px" alt="Google &quot;G&quot; Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"/>
+         </div>
+         Login with Google
+     </button>
+
+    <div id="result"></div>
+
+</div>
+
+<script>
+
+    {#onload Start function#}
+    function start() {
+        gapi.load('auth2', function () {
+          auth2 = gapi.auth2.init({
+            client_id: '{{ client_id }}',
+            // Scopes to request in addition to 'profile' and 'email'
+            //scope: 'additional_scope'
+          });
+        });
+        $('#signInButton').click(function () {
+          // signInCallback defined in step 6.
+          auth2.grantOfflineAccess().then(signInCallback);
+        });
+    }
+
+    {#Callback Function to the server side#}
+    function signInCallback(authResult) {
+
+        if (authResult['code']) {
+
+          // Hide the sign-in button now that the user is authorized
+          $('#signInButton').attr('style', 'display: none')
+
+          // Send the one-time-use code to the server Using Ajax,
+          // if the server side responds, hint a successful login message to the web page
+          // and then go back to the main Catalog page
+          $.ajax({
+            type: 'POST',
+            url: '/gconnect?state={{state}}',
+            processData: false,
+            data: authResult['code'],
+            contentType: 'application/octet-stream; charset=utf-8',
+            success: function(result) {
+                  // Handle or verify the server response if necessary.
+                  if (result) {
+                    {#  View the hand-written modified returned HTML
+                     representing successful authentication for the server with Google #}
+                    $('#result').html(result)
+                   {#   Wait for 4 seconds before redirecting to the home page  #}
+                   setTimeout(function() {
+                    window.location.href = "/";
+                   }, 4000);
+
+                  } else if (authResult['error']) {
+                    console.log('There was an error: ' + authResult['error']);
+                  } else {
+                    $('#result').html('OPS! Server-side call to Google Servers failed. Check your configurations and console for stack trace.');
+                  }
+            }
+
+            });
+        }
+    }
+
+</script>
+
+{% endblock %}
