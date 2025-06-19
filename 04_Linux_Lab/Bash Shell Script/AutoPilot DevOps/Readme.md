@@ -4,12 +4,6 @@ Bash scripting plays a crucial role in cybersecurity due to its versatility and 
 
 <h2></h2>
 
-<h2>Prerequisites</h2>
-
-- Register for a trial account on DigitalOcean and deploy a Linux Virtual Machine (VM). [Tutorial Here](https://github.com/jefftsui1/Cybersecurity-Home-Labs/blob/main/Virtual-Machine/DigitalOcean/Linux.md)
-
-- Download PuTTY for connecting to the Linux Virtual Machine (VM). [Tutorial Here](https://github.com/jefftsui1/Cybersecurity-Home-Labs/blob/main/Virtual-Machine/PuTTY/PuTTY.md)
-
 <h2></h2>
 
 <h2>Solve 100 Hands-On Tasks Projects</h2>
