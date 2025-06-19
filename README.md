@@ -118,7 +118,7 @@ This lab runs 24/7. When I break something, I fix it. When I get owned, I analyz
 
 - GitHub: [mchyasn](https://github.com/mchyasn)
 - LinkedIn: [linkedin.com/in/mchyasn](https://linkedin.com/in/mchyasn)
-
+- 📄 [Download PDF Lab Summary](./resources/Cybersecurity_Home_Lab_Summary.pdf)
 ---
 
 > 🧠 “There’s no patch for human curiosity.”
