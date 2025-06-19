@@ -1,3 +1,53 @@
+![275119218-d1397fe6-99fa-4913-b2c4-159e3180131b](https://github.com/jefftsui1/jefftsui1/assets/46698661/138acf75-2f95-4334-80ce-c6c736112abc)
+
+
+
+<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=jefftsui1.jefftsui1" />
+
+<h1 align="center">
+    <a href="https://git.io/typing-svg">
+        <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=2500&lines=👋+Hello+I'm+mchyasn!+👋......;+Thank+You+For+Visiting!.......;" />
+</h1>
+
+💡 Got a question? Fire away—I'm always open to chat and share insights!
+
+ ⚡ Fun fact: _You can totally skydive without a parachute... but only once._ 😄
+ 
+ </div>
+ <a href="https://www.linkedin.com/in/mechyasn/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" /> 
+  </a>
+
+  </div>
+
+
+
+<div align="center">
+  <h1>My Contributions 🐍 Game</h1>
+  <br>
+    
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/jefftsui1/jefftsui1/output/github-contribution-grid-snake-dark.svg"
+  />
+    
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/jefftsui1/jefftsui1/output/github-contribution-grid-snake-dark.svg" />
+  
+  <br/><br/><br/>
+</div>
+
+
+
+
+<div align="center">
+  <img src="https://github.com/jefftsui1/jefftsui1/assets/46698661/f7da48e9-2583-4658-b1f4-f2dd4c376713" style="max-width:100" alt="Banner" >
+</div>
+
+
+<hr/>
+
+
 # 🧨 Cybersecurity Home Lab — Built from Scratch
 
 This is my personal cyber lab. No bootcamps, no lectures — just bare-metal setups, VMs on fire, logs screaming, and scripts that do damage (or fix it). I built this thing to learn, to test, to break stuff, and to defend it too.
