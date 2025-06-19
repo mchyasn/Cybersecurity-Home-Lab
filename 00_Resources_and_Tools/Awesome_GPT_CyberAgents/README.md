@@ -1,9 +1,5 @@
 # 😎 Awesome GPTs (Agents) for Cybersecurity [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) 
-<a href="https://github.com/fr0gger/Awesome-GPT-Agents">
-    <img title="Star on GitHub" src="https://img.shields.io/github/stars/fr0gger/Awesome-GPT-Agents">
-  </a>
-  <a href="https://github.com/fr0gger/Awesome-GPT-Agents/fork">
-    <img title="Fork on GitHub" src="https://img.shields.io/github/forks/fr0gger/Awesome-GPT-Agents">
+
   </a>
   
 The "Awesome GPTs (Agents) Repo" represents an initial effort to compile a comprehensive list of GPT agents focused on cybersecurity (offensive and defensive), created by the community. 
@@ -11,8 +7,6 @@ The "Awesome GPTs (Agents) Repo" represents an initial effort to compile a compr
 Please note, this repository is a community-driven project and may not list all existing GPT agents in cybersecurity. Contributions are welcome – feel free to add your own creations!
 
 **Disclaimer: Users should exercise caution and evaluate the agents before use. Additionaly please note that some of these GPTs are still in experimental test phase.**
-
-🌟 If you enjoy this content, consider following me: [@fr0gger_](https://x.com/fr0gger_) 
 
 ## Basic Guidelines
 There is some specific keywords that trigger some actions from GPTS; here are some of them to maximize their use:
@@ -161,11 +155,11 @@ There is some specific keywords that trigger some actions from GPTS; here are so
 * [RedTeamGPT](https://chat.openai.com/g/g-j8ldT0QAO-redteamgpt): Advanced guide in red teaming, pentest, attack and cybersecurity.
 * [DFIR-GPT](https://chat.openai.com/g/g-11Pfha6Uq-dfir-gpt): A GPT Agent that tries to provide Digital Forensics and Incident Response (DFIR) technical advice and guidance. 
 
-## Contributing <a href="https://github.com/fr0gger/Awesome-GPT-Agents/graphs/contributors"> ![GitHub](https://img.shields.io/github/contributors/fr0gger/Awesome-GPT-Agents) </a>
+## Contributing <a href="https://github.com/fr0gger/Awesome-GPT-Agents/graphs/contributors"> 
 
 Want to add another cybersecurity agent. Create a pull request with the tool by following the list above. 
 
-See also the list of [contributors](https://github.com/fr0gger/Awesome-GPT-Agents/graphs/contributors) who participate in this project.
+
 
 ## ChatGPT Plus Subscription Requirement for using _GPTS_
 
