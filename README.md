@@ -9,9 +9,9 @@
         <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=2500&lines=👋+Hello+I'm+mchyasn!+👋......;+Thank+You+For+Visiting!.......;" />
 </h1>
 
-💡 Got a question? Fire away—I'm always open to chat and share insights!
+ Got a question? Fire away—I'm always open to chat and share insights!
 
- ⚡ Fun fact: _You can totally skydive without a parachute... but only once._ 😄
+Fun fact: _You can totally skydive without a parachute... but only once._ 
  
  </div>
  <a href="https://www.linkedin.com/in/mechyasn/" target="_blank">
@@ -48,15 +48,15 @@
 <hr/>
 
 
-# 🧨 Cybersecurity Home Lab — Built from Scratch
+#  Cybersecurity Home Lab — Built from Scratch
 
 This is my personal cyber lab. No bootcamps, no lectures — just bare-metal setups, VMs on fire, logs screaming, and scripts that do damage (or fix it). I built this thing to learn, to test, to break stuff, and to defend it too.
 
-> 💻 Learn by doing. Break by choice. Fix because you understand it.
+>  Learn by doing. Break by choice. Fix because you understand it.
 
 ---
 
-## 🕸️ What This Is
+##  What This Is
 
 - Simulated enterprise network
 - Custom-built blue/red/purple team ops
@@ -66,7 +66,7 @@ This is my personal cyber lab. No bootcamps, no lectures — just bare-metal set
 
 ---
 
-## 🧱 Infra Breakdown
+## Infra Breakdown
 
 | Layer           | What's Running                                                   |
 |-----------------|------------------------------------------------------------------|
@@ -79,7 +79,7 @@ This is my personal cyber lab. No bootcamps, no lectures — just bare-metal set
 
 ---
 
-## 📂 Directory Structure
+## Directory Structure
 
 Cybersecurity_Home_Lab/
 ├── 00_Resources_and_Tools
@@ -117,19 +117,19 @@ Cybersecurity_Home_Lab/
 
 ---
 
-## 🛠️ Tools I Bleed With
+##  Tools I Bleed With
 
-- 🔧 Nmap, Hydra, Burp, Metasploit, CrackMapExec
-- 🔐 Suricata, Zeek, Wazuh, Fail2Ban, Sysmon
-- 📊 Splunk, Kibana, ELK Stack, Grafana
-- 💣 Kali, Parrot, C2s, shells, exfil scripts
-- 🔬 Ghidra, x64dbg, radare2, Wireshark
-- ☁️ AWS, Terraform, Tailscale, EC2 playground
-- 🧼 Bash, PowerShell, Python, YAML, crontabs
+-  Nmap, Hydra, Burp, Metasploit, CrackMapExec
+-  Suricata, Zeek, Wazuh, Fail2Ban, Sysmon
+-  Splunk, Kibana, ELK Stack, Grafana
+-  Kali, Parrot, C2s, shells, exfil scripts
+-  Ghidra, x64dbg, radare2, Wireshark
+-  AWS, Terraform, Tailscale, EC2 playground
+-  Bash, PowerShell, Python, YAML, crontabs
 
 ---
 
-## ⚔️ Projects That Slap
+##  Projects That Slap
 
 - Full AD lab w/ DC, DNS, DHCP, GPOs — joined clients, simulated attacks
 - Splunk SIEM catching brute force + recon from inside
@@ -141,7 +141,7 @@ Cybersecurity_Home_Lab/
 
 ---
 
-## 🧠 Why I Built This
+##  Why I Built This
 
 Certs? I’ve got some. But this is where I actually **learn**.
 
@@ -149,26 +149,26 @@ This lab runs 24/7. When I break something, I fix it. When I get owned, I analyz
 
 ---
 
-## 🧠 Areas Covered
+##  Areas Covered
 
-- ✔️ Networking & VLANs
-- ✔️ Windows AD + GPOs
-- ✔️ Linux internals & hardening
-- ✔️ Web app attacks
-- ✔️ Log collection + analysis
-- ✔️ Threat detection & alerting
-- ✔️ SIEM correlation rules
-- ✔️ CTFs, payloads, privilege escalation
-- ✔️ Cloud and DevSecOps
-- ✔️ Reverse engineering and malware teardown
+-  Networking & VLANs
+-  Windows AD + GPOs
+-  Linux internals & hardening
+-  Web app attacks
+-  Log collection + analysis
+-  Threat detection & alerting
+-  SIEM correlation rules
+-  CTFs, payloads, privilege escalation
+-  Cloud and DevSecOps
+-  Reverse engineering and malware teardown
 
 ---
 
-## 🔗 Connect
+## Connect
 
 - GitHub: [mchyasn](https://github.com/mchyasn)
 - LinkedIn: [linkedin.com/in/mchyasn](https://linkedin.com/in/mchyasn)
-- 📄 [Download PDF Lab Summary](./resources/Cybersecurity_Home_Lab_Summary.pdf)
+- [Download PDF Lab Summary](./resources/Cybersecurity_Home_Lab_Summary.pdf)
 ---
 
-> 🧠 “There’s no patch for human curiosity.”
+> “There’s no patch for human curiosity.”
